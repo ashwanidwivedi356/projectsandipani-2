@@ -163,6 +163,12 @@ def add_pandit(request):
 def about(request):
  return render(request, 'app/about.html')
 
+def terms(request):
+ return render(request, 'app/terms.html')
+
+def privacy(request):
+ return render(request, 'app/privacy.html')
+
 @login_required
 def book_schedule(request):
     if request.method == 'POST':
